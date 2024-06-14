@@ -22,7 +22,7 @@ class FetchWeatherUseCase(
                     if (data != null)
                         emit(
                             OperationResult.Success(
-                                data
+                                data.copy()
                             )
                         )
                 }
